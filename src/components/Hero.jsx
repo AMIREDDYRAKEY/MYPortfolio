@@ -17,7 +17,7 @@ const Hero = () => {
         </div>
         {/* boxes */}
         <div className='md:flex md:flex-row flex flex-col gap-8  md:mt-0 mt-5 md:gap-7'>
-           <div className='  border-[1.5px] border-[#858d98] h-[60px] w-[170px] flex items-center justify-center bg-[#ff014f] rounded-md gap-2 coursor-pointer' ><button className='text-[17px] text-white font-semibold'>Download Cv </button> <IoMdDownload className='text-[17px] text-white' /></div>
+           <div className='  border-[1.5px] border-[#858d98] h-[60px] w-[170px] flex items-center justify-center bg-[#ff014f] rounded-md gap-2 coursor-pointer hover:bg-[#212428] ' ><button className='text-[17px] text-white font-semibold'>Download Cv </button> <IoMdDownload className='text-[17px] text-white' /></div>
            <div className='  border-[1.5px] border-[#858d98] h-[60px] w-[170px] flex items-center justify-center  rounded-md gap-2 hover:bg-[#ff014f] coursor-pointer' ><button className='text-[17px] text-white font-bold'>Get In Touch </button></div>
         </div>
       </div>
