@@ -9,7 +9,7 @@ const Skills = () => {
   const skills = [
     { name: "HTML", img: htmlLogo },
     { name: "CSS", img: cssLogo },
-    { name: "JavaScript", img: jsLogo },
+    { name: "Javascript", img: jsLogo },
     { name: "Tailwind CSS", img: tailwindLogo },
     { name: "React JS", img: reactLogo },
     { name: "Redux", img: Reduxlogo },
