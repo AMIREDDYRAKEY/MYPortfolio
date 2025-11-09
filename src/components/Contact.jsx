@@ -31,7 +31,7 @@ const Contact = () => {
         <div className="flex items-center gap-3">
           <FaMapMarkerAlt className="text-[#ff014f] text-xl" />
           <p className="text-gray-300">
-            Andhra Pradesh, India, Kadapa(Dist), Duvur(M), ChinnaSinganapalli
+             India,Andhra Pradesh, Kadapa(Dist), Duvur(M), ChinnaSinganapalli
           </p>
         </div>
 
