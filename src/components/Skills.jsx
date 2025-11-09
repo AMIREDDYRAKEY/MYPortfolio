@@ -1,7 +1,7 @@
 import React from 'react';
 import htmlLogo from '../assets/HTML5.png';
 import cssLogo from '../assets/CSS3.png';
-import jsLogo from '../assets/javascript.png';
+import jsIcon from "../assets/javascript.png";
 import tailwindLogo from '../assets/Tailwind.png';
 import reactLogo from '../assets/React.png';
 import Reduxlogo from "../assets/Redux.png"
@@ -9,7 +9,7 @@ const Skills = () => {
   const skills = [
     { name: "HTML", img: htmlLogo },
     { name: "CSS", img: cssLogo },
-    { name: "Javascript", img: jsLogo },
+    { name: "Javascript", img: jsIcon },
     { name: "Tailwind CSS", img: tailwindLogo },
     { name: "React JS", img: reactLogo },
     { name: "Redux", img: Reduxlogo },
