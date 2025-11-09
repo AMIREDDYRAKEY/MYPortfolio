@@ -2,7 +2,7 @@ import React from 'react';
 import htmlLogo from '../assets/html.png';
 import cssLogo from '../assets/css.png';
 import jsIcon from '../assets/js.png';
-import tailwindLogo from '../assets/tailwind.png';
+import tailwindLogo from '../assets/ti.png';
 import reactLogo from '../assets/react.png';
 import reduxLogo from '../assets/redux.png';
 
