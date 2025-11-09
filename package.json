@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "npx vite build",
-  "preview": "vite preview"
+  "preview": "vite preview",
+   "vercel-build": "npm install vite@latest && vite build",
+  "build": "npm run vercel-build"
   
      
   },
@@ -31,7 +33,7 @@
     "tailwindcss": "^3.3.5",
     "vite": "^7.1.2"
   },
-  "engines": {
-  "node": "20.x"
-}
+"engines": {
+  "node": "18.x"
+} 
 }
