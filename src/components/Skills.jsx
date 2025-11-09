@@ -3,8 +3,8 @@ import htmlLogo from '../assets/html.png';
 import cssLogo from '../assets/css.png';
 import jsIcon from '../assets/js.png';
 import tailwindLogo from '../assets/ti.png';
-import reactLogo from '../assets/react.png';
-import reduxLogo from '../assets/redux.png';
+import reactLogo from '../assets/re.png';
+import reduxLogo from '../assets/red.png';
 
 const Skills = () => {
   const skills = [
