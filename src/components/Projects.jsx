@@ -1,8 +1,8 @@
 import React from "react";
 import eventImg from "../assets/event.png";
-import DewiImg from "../assets/Dewi.png";
-import Weath from "../assets/Weath.png";
-import Redux from "../assets/Redux.png";
+import DewiImg from "../assets/dew.png";
+import Weath from "../assets/wea.png";
+import Redux from "../assets/redu.png";
 
 const Projects = () => {
   const projects = [
