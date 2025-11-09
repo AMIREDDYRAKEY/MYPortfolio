@@ -3,7 +3,7 @@ import React from "react";
 const Myeducation = () => {
   return (
     <div className="flex justify-center items-center mt-[30px]">
-      <div className="border-[1px] h-auto w-[90%] border-[#858d98] rounded-2xl p-6 text-white">
+      <div className="border-[1px] h-auto w-[94%] border-[#858d98] rounded-2xl p-6 text-white">
         <h2 className="text-xl font-semibold">My  Education</h2>
         <div className="space-y-6 mt-5">
           <div className="border-l-4 border-blue-400 pl-4">

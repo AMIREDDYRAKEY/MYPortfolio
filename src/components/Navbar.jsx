@@ -32,9 +32,9 @@ const Navbar = () => {
           <li><button onClick={() => handleScroll("contact")} className="text-[#858d98] font-semibold hover:text-[#ff014f]">Contact</button></li>
         </ul>
       </div>
-
+  <div className='flex justify-around'>
       {/* Mobile Menu Button */}
-      <div className="md:hidden flex text-[#858d98] text-[30px] mr-[60px]">
+      <div className="md:hidden flex text-[#858d98] text-[30px] ">
         <button onClick={() => setopen(!open)}>
           <FaBars />
         </button>
@@ -58,6 +58,7 @@ const Navbar = () => {
           </div>
         </div>
       )}
+      </div>
     </nav>
   )
 }

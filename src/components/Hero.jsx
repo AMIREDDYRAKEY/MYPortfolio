@@ -17,7 +17,7 @@ const Hero = () => {
           </div>
           {/* boxes */}
           <div className='md:flex md:flex-row flex flex-col gap-8  md:mt-0 mt-5 md:gap-7'>
-            <div className='  border-[1.5px] border-[#858d98] h-[60px] w-[170px] flex items-center justify-center bg-[#ff014f] rounded-md gap-2 coursor-pointer hover:bg-[#212428] ' > <a
+            <div className='  border-[1.5px] border-[#858d98] h-[60px] lg:w-[170px] w-[280px] flex items-center justify-center bg-[#ff014f] rounded-md gap-2 coursor-pointer hover:bg-[#212428] ' > <a
               href="/RakeshResume.pdf"
               download
               className='flex items-center gap-2 text-white font-semibold text-[17px]'
@@ -26,7 +26,7 @@ const Hero = () => {
               <IoMdDownload className='text-[17px]' />
             </a></div>
             <a href="#contact">
-              <div className='border-[1.5px] border-[#858d98] h-[60px] w-[170px] flex items-center justify-center rounded-md gap-2 hover:bg-[#ff014f] cursor-pointer'>
+              <div className='border-[1.5px] border-[#858d98] h-[60px] lg:w-[170px] w-[280px] flex items-center justify-center rounded-md gap-2 hover:bg-[#ff014f] cursor-pointer'>
                 <button className='text-[17px] text-white font-bold'>Get In Touch</button>
               </div>
             </a>
