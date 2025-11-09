@@ -1,18 +1,19 @@
 import React from 'react';
-import htmlLogo from '../assets/HTML5.png';
-import cssLogo from '../assets/CSS3.png';
-import jsIcon from "../assets/Javascript.png";
-import tailwindLogo from '../assets/Tailwind.png';
-import reactLogo from '../assets/React.png';
-import Reduxlogo from "../assets/Redux.png"
+import htmlLogo from '../assets/html5.png';
+import cssLogo from '../assets/css3.png';
+import jsIcon from '../assets/javascript.png';
+import tailwindLogo from '../assets/tailwind.png';
+import reactLogo from '../assets/react.png';
+import reduxLogo from '../assets/redux.png';
+
 const Skills = () => {
   const skills = [
     { name: "HTML", img: htmlLogo },
     { name: "CSS", img: cssLogo },
-    { name: "javascript", img: jsIcon },
+    { name: "JavaScript", img: jsIcon },
     { name: "Tailwind CSS", img: tailwindLogo },
     { name: "React JS", img: reactLogo },
-    { name: "Redux", img: Reduxlogo },
+    { name: "Redux", img: reduxLogo },
   ];
 
   return (
