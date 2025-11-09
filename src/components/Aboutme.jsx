@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Myeducation from './Myeducation'
 import Worke from './Work'
 import Certifications from './Certifications'
+import Strengths from './Strengths'
 const Aboutme = () => {
   const [Activetab, setActivetab] = useState("education")
 
@@ -68,9 +69,7 @@ const Aboutme = () => {
         {Activetab === 'education' && <Myeducation />}
         {Activetab === 'work' && <Worke />}
         {Activetab === 'certifi' && <Certifications/>}
-        {Activetab === 'strength' && (
-          <p className="text-white text-center text-sm sm:text-base">mmmm</p>
-        )}
+        {Activetab === 'strength' && <Strengths/>}
       </div>
     </div>
   )
