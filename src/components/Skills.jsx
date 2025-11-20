@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import htmlLogo from '../assets/html.png';
 import cssLogo from '../assets/css.png';
 import jsIcon from '../assets/js.png';
@@ -16,8 +17,28 @@ const Skills = () => {
     { name: "Redux", img: reduxLogo },
   ];
 
+  // Parent animation (stagger for children)
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: { staggerChildren: 0.2 },
+    },
+  };
+
+  // Child animation for each skill card
+  const item = {
+    hidden: { opacity: 0, scale: 0.7 },
+    show: { opacity: 1, scale: 1 },
+  };
+
   return (
-    <div className="mt-12 px-6 sm:px-10 md:px-20">
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.7 }}
+      className="mt-12 px-6 sm:px-10 md:px-20"
+    >
       {/* Title */}
       <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4">
         <h1 className="text-[#858d98] font-bold text-3xl sm:text-4xl">
@@ -27,15 +48,30 @@ const Skills = () => {
       </div>
 
       {/* Skills Grid */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8 mt-10 justify-items-center">
+      <motion.div
+        variants={container}
+        initial="hidden"
+        animate="show"
+        className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8 mt-10 justify-items-center"
+      >
         {skills.map((skill, i) => (
-          <div key={i} className="flex flex-col items-center">
-            <img src={skill.img} alt={skill.name} className="w-16 h-16 mb-2" />
+          <motion.div
+            variants={item}
+            key={i}
+            whileHover={{ scale: 1.1 }}
+            transition={{ type: "spring", stiffness: 200 }}
+            className="flex flex-col items-center cursor-pointer"
+          >
+            <img
+              src={skill.img}
+              alt={skill.name}
+              className="w-16 h-16 mb-2"
+            />
             <p className="text-white font-bold">{skill.name}</p>
-          </div>
+          </motion.div>
         ))}
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 

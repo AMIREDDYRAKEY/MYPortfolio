@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import eventImg from "../assets/event.png";
 import DewiImg from "../assets/dew.png";
 import Weath from "../assets/wea.png";
@@ -12,7 +13,7 @@ const Projects = () => {
         "A responsive and modern practice website built using HTML, CSS, and Tailwind CSS. It showcases clean layout design, smooth animations, and mobile-friendly sections like Home, About, and Contact to strengthen front-end development skills.",
       image: DewiImg,
       techStack: ["HTML", "CSS", "Tailwind CSS"],
-       link: "https://dewi-five.vercel.app",
+      link: "https://dewi-five.vercel.app",
     },
     {
       title: "Event Management Website",
@@ -42,40 +43,55 @@ const Projects = () => {
 
   return (
     <div className="mt-[90px] px-6 sm:px-10 md:px-20">
+      
       {/* Title */}
-      <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3">
+      <motion.div
+        initial={{ opacity: 0, x: -40 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+        className="flex flex-col sm:flex-row items-start sm:items-center gap-3"
+      >
         <h1 className="text-[#858d98] font-bold text-3xl sm:text-4xl">
           My Projects
         </h1>
         <div className="w-[150px] h-[3px] bg-[#ff014f]" />
-      </div>
+      </motion.div>
 
       {/* Projects Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center gap-8 mt-12">
         {projects.map((project, i) => (
-          <div
+          <motion.div
             key={i}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: i * 0.15 }}
+            viewport={{ once: true }}
             className="bg-[#1a1a1a] border border-[#2a2a2a] rounded-2xl shadow-lg overflow-hidden transform transition-all hover:scale-[1.03] hover:border-[#ff014f] 
                       lg:w-[370px] w-[290px] h-[430px] lg:h-[420px] flex flex-col justify-between ml-[-10px] lg:ml-0"
           >
-            <img
+            <motion.img
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
               src={project.image}
               alt={project.title}
-              className="w-[290px] lg:w-[370px]  h-[230px] object-cover"
+              className="w-[290px] lg:w-[370px] h-[230px] object-cover"
             />
+
             <div className="p-4 flex flex-col justify-between flex-grow">
               <h2 className="text-white text-xl font-semibold">
                 {project.title}
               </h2>
+
               <p className="text-gray-400 text-[10px] mt-2 line-clamp-4">
                 {project.description}
               </p>
 
               {/* Tech Stack */}
               <div className="mt-1">
-                <p className="text-[#ff014f] text-sm font-bold">
-                  Tech Stack:
-                </p>
+                <p className="text-[#ff014f] text-sm font-bold">Tech Stack:</p>
                 <div className="flex flex-wrap gap-2 mt-2">
                   {project.techStack.map((tech, index) => (
                     <span
@@ -91,11 +107,13 @@ const Projects = () => {
               <a
                 href={project.link}
                 className="inline-block mt-5 text-[#ff014f] font-semibold hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 View Project →
               </a>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>
