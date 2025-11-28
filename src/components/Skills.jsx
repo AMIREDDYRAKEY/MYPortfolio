@@ -6,7 +6,8 @@ import jsIcon from '../assets/js.png';
 import tailwindLogo from '../assets/ti.png';
 import reactLogo from '../assets/re.png';
 import reduxLogo from '../assets/red.png';
-
+import mdblogo from "../assets/MDB.png"
+import nodelogo from "../assets/Nod.png"
 const Skills = () => {
   const skills = [
     { name: "HTML", img: htmlLogo },
@@ -15,6 +16,8 @@ const Skills = () => {
     { name: "Tailwind CSS", img: tailwindLogo },
     { name: "React JS", img: reactLogo },
     { name: "Redux", img: reduxLogo },
+    { name: "Mongo DB", img: mdblogo },
+    { name: "Node Js", img: nodelogo },
   ];
 
   // Parent animation (stagger for children)

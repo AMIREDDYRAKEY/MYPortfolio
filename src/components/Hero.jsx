@@ -46,7 +46,11 @@ const Hero = () => {
             className='md:flex md:flex-row flex flex-col gap-8 md:mt-0 mt-5 md:gap-7'
           >
             <div className='border-[1.5px] border-[#858d98] h-[60px] lg:w-[170px] w-[280px] flex items-center justify-center bg-[#ff014f] rounded-md gap-2 cursor-pointer hover:bg-[#212428]'>
-              <a href="/RakeshResume.pdf" download className='flex items-center gap-2 text-white font-semibold text-[17px]'>
+              <a
+                href="/Rakesh-resume.pdf"
+                download="Rakesh-resume.pdf"
+                className="flex items-center gap-2 text-white font-semibold text-[17px]"
+              >
                 <span>Download CV</span>
                 <IoMdDownload className='text-[17px]' />
               </a>
