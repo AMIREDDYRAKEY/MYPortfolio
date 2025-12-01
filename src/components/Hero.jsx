@@ -24,7 +24,7 @@ const Hero = () => {
             transition={{ delay: 0.4, duration: 0.8 }}
             className='text-white md:text-[40px] font-bold'
           >
-            Frontend Developer
+            FullStack Developer
           </motion.div>
 
           <motion.div
